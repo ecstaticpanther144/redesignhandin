@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--basic setup template adapted from the bootstrap live coding video-->
+<html lang="en">
+<head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bootstrap.css">
+<link rel="stylesheet" href="style.css">
+<title>Responsive Redesign</title>
+</head>
+<body>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <h1>Responsive Redesign</h1>
+        <h2>Redesigning a Native American Languages Website</h2>
+        <a href="http://www.native-languages.org/">Original Website</a>
+        <a href="https://ecstaticpanther144.github.io/responsiveredesign/">Redesigned Webpage</a>
+        <h5>The links above link to the original website, and my proposed responsive redesign of the website's homepage.</h5>
+        <h3>Usability Issues of the Original Webpage</h3>
+        <p>
+            <ul>
+                <li>Hierarchy is not clear: there are some links at the top of the page, followed by a long section of introductory text, and then followed by more links.</li>
+                <li>Several of the links on the page lead to the same page, but are worded differently and so make the user think they are different links.</li>
+                <li>On the flip side, there are different links that seem to lead to the same thing but don’t (ex, there is a section at the bottom of the page of recommended books, but the “Native American Books” link from the first section of the page leads to a different page entirely)</li>
+                <li>Visually, the page is very text heavy and requires a lot of reading in order to figure out where to navigate to</li>
+                <li>The search bars are confusing: there are two (one at the top, one at the bottom) and both have differently labeled buttons, but they both conduct the same Google searches</li>
+                <li>The search bar on the top of the page implies that the search will be within the site, but this is not the case–the search is powered by Google and therefore displays results from across the web</li>
+                <li>The lack of margins makes it difficult to read large blocks of text</li>
+                <li>If a user ever wanted to go back to the website a later time and navigate to a page they had visited previously, they could still have to read through the whole website in order to find the link since they are not organized memorably</li>
+            </ul>
+        </p>
+        <h3>Accessibility Issues</h3>
+        <p>I passed the webpage through WebAIM WAVE to assess the accessibility issues of the page. The use of images without alt text as bullet points and section dividers makes the site less accessible (this error was flagged 98 times, from the sheer number of blue bullet point images on the page). The use of underlined section headers is also flagged as an issue. I agree that it is unnecessary to use an image of a bullet point several times on a page, instead of simply using a bulleted list in HTML or having fewer links on the screen. Additionally, underlined text usually signals a link, so the fact these headers are not links can confuse users’ mental model of the webpage.</p>
+        <h3>Prototyping</h3>
+        <h5>Based on the usability and accessibility issues identified above, I created low fidelity and high fidelity wireframes of the webpage on three possible device sizes.</h5>
+        <h4>Low-Fidelity Wireframes</h4>
+        <p>These wireframes were made in Balsamiq and roughly outline the new layout and hierarchy of the page. I decided to consolidate all the links into fewer clickable tiles, as well as group the tiles according to their theme.</p>
+    </div>
+    <div class="wireframe">
+        <img src ="images/ipadlofi.png" alt="low-fidelity ipad wireframe" style="height:45rem">
+        <img src ="images/annotations.png" alt="low-fidelity desktop wireframe with annotations" style="width: 45rem; height:45rem">
+        <img src ="images/iphonelofi.png" alt="low-fidelity iphone wireframe" style="height:45rem">
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center styleguide">
+        <h4>Visual Design Style Guide</h4>
+        <p>This style guide highlights the various visual states of the main components of the page, and how they change visually with user interactions</p>
+        <img src ="images/visualdesignstyleguide.png" alt="Visual design style guide graphic" style="width: 45rem; height:50rem">
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center">    
+        <h4>High-Fidelity Wireframes</h4>
+        <p>These wireframes were made in Figma and fold in the elements from the visual style guide above</p>
+    </div>
+    <div class="wireframe">
+        <img src ="images/desktophifiannote.png" alt="high-fidelity desktop wireframe with annotations" style="height:40rem">
+        <img src ="images/ipadhifiannote.png" alt="high-fidelity ipad and iphone wireframe with annotations" style="height:40rem">
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center">    
+        <h4>Redesigned Webpage</h4>
+        <p>For the most part, my redesigned webpage closely follows the high-fidelity wireframe in terms of design. The main change was using images for the tiles rather than solid colors to make the webpage more visually dynamic. Some screenshots are included below.</p>
+    </div>
+    <div class="wireframe">
+        <img src ="images/000.png" alt="screenshot of the top half of redesigned page" style="height:17rem">
+        <img src ="images/001.png" alt="screenshot of the middle of the redesigned page" style="height:17rem">
+        <img src ="images/002.png" alt="screenshot of the bottom of the redesigned page" style="height:17rem">
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center">    
+        <p>When the display dimensions are smaller, the navbar collapses as expected into a hamburger menu, the tile grids changes their number of rows and columns, and text scales appropriately. This is all demonstrated in the screenshot below.</p>
+        <img src ="images/responsivescreenshots.png" alt="screenshot of a narrow dimension display of the page" style="height:40rem">
+    </div>
+</body>
+</html>
